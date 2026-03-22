@@ -1,12 +1,23 @@
 {
-    "web-search": {
-        "name": "web-search",
-        "description": "Use this tool to search the web for information. It can be used to find recent news, gather information about a topic, or find specific details that may not be available in the training data.",
-        "parameters": {
-            "query": {
-                "type": "string",
-                "description": "The search query to use when searching the web."
-            }
-        }
+    "Notion": {
+        "command": "npx",
+        "args": ["-y", "@notionhq/notion-mcp-server"],
+        "env": {
+            "NOTION_TOKEN": "$NOTION_TOKEN"
+        },
+        "transport": "stdio"
+    },
+    "gmail": {
+        "command": "npx",
+        "args": ["@gongrzhe/server-gmail-autoauth-mcp"],
+        "transport": "stdio"
+    },
+    "google-calendar": {
+        "command": "npx",
+        "args": ["@cocal/google-calendar-mcp"],
+        "env": {
+            "GOOGLE_OAUTH_CREDENTIALS": "$GOOGLE_OAUTH_CREDENTIALS"
+        },
+        "transport": "stdio"
     }
 }
