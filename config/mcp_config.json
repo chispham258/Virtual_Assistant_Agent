@@ -1,0 +1,12 @@
+{
+    "web-search": {
+        "name": "web-search",
+        "description": "Use this tool to search the web for information. It can be used to find recent news, gather information about a topic, or find specific details that may not be available in the training data.",
+        "parameters": {
+            "query": {
+                "type": "string",
+                "description": "The search query to use when searching the web."
+            }
+        }
+    }
+}
